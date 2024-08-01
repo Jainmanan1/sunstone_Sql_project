@@ -4,7 +4,7 @@
 This project involves building an online retail application database using SQL. The database supports customer registration, product purchases, and payment processing.
 
 ## ER Diagram
-![ER Diagram](path/to/your/er_diagram.png)  
+![ER Diagram](OnlineRetail_schema.png)  
 
 ## Tables
 1. **Customer**: Stores customer information.
