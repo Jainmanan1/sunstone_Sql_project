@@ -39,6 +39,15 @@ CREATE TABLE OrderItem (
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
+CREATE TABLE Payment (
+        PaymentID INT AUTO_INCREMENT PRIMARY KEY,
+        OrderID INT,
+        PaymentDate DATE,
+        PaymentAmount DECIMAL(10, 2),
+        PaymentMethod VARCHAR(50),
+        FOREIGN KEY (OrderID) REFERENCES `Order`(OrderID)
+     );
+
 
 INSERT INTO Customers (Name, Address, ContactInfo, BankDetails)
 VALUES ('John Doe', '123 Main St', '555-1234', 'Bank A - 12345678'),
